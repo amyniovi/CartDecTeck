@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2019
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TDDCart", "TDDCart\TDDCart.csproj", "{0798F8C7-3AD6-4BBB-961A-C9C0CAB81220}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TDDCart.Tests", "TDDCart.Tests\TDDCart.Tests.csproj", "{7C9622D0-D415-4B95-BC55-65202FFFFEAA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0798F8C7-3AD6-4BBB-961A-C9C0CAB81220}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0798F8C7-3AD6-4BBB-961A-C9C0CAB81220}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0798F8C7-3AD6-4BBB-961A-C9C0CAB81220}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0798F8C7-3AD6-4BBB-961A-C9C0CAB81220}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7C9622D0-D415-4B95-BC55-65202FFFFEAA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7C9622D0-D415-4B95-BC55-65202FFFFEAA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7C9622D0-D415-4B95-BC55-65202FFFFEAA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7C9622D0-D415-4B95-BC55-65202FFFFEAA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {86BA782E-FBAC-481C-A2F0-8FD8CCBDDD92}
+	EndGlobalSection
+EndGlobal
