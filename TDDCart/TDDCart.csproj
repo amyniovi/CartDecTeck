@@ -146,7 +146,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\WebApiConfig.cs" />
-    <Compile Include="Company.Interfaces\IDiscountCalculator.cs" />
     <Compile Include="Company.Repositories\Interfaces\ICartRepo.cs" />
     <Compile Include="Company.Repositories\Interfaces\IItemRepo.cs" />
     <Compile Include="Company.Services\CartService.cs" />
@@ -154,6 +153,9 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\Calculators\CartDiscountCalculator.cs" />
+    <Compile Include="Models\Calculators\Interfaces\ICartDiscountCalculator.cs" />
+    <Compile Include="Models\Calculators\Interfaces\ICartDiscountRule.cs" />
     <Compile Include="Models\Cart.cs" />
     <Compile Include="Models\CartItem.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -193,6 +195,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Company.Interfaces\" />
     <Folder Include="Controllers\" />
   </ItemGroup>
   <ItemGroup>

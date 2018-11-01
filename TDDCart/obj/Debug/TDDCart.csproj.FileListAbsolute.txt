@@ -70,7 +70,6 @@ C:\projects\TDDCart\TDDCart\bin\Microsoft.AI.DependencyCollector.xml
 C:\projects\TDDCart\TDDCart\bin\Microsoft.AI.WindowsServer.xml
 C:\projects\TDDCart\TDDCart\bin\Microsoft.AI.Web.xml
 C:\projects\TDDCart\TDDCart\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-C:\projects\TDDCart\TDDCart\obj\Debug\TDDCart.csprojAssemblyReference.cache
 C:\projects\TDDCart\TDDCart\obj\Debug\TDDCart.csproj.CoreCompileInputs.cache
 C:\projects\TDDCart\TDDCart\obj\Debug\TDDCart.csproj.CopyComplete
 C:\projects\TDDCart\TDDCart\obj\Debug\TDDCart.dll

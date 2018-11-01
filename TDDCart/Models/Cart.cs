@@ -1,14 +1,15 @@
 ﻿using System.Collections.Generic;
-using TDDCart.Company.Interfaces;
+using System.Linq;
+using TDDCart.Models.Calculators.Interfaces;
 
 namespace TDDCart.Models
 {
     public class Cart
     {
-        private readonly IDiscountCalculator _discountCalculator;
-        private IEnumerable<CartItem> _items;
+        private readonly ICartDiscountCalculator _discountCalculator;
+        private List<CartItem> _items = new List<CartItem>();
 
-        public Cart(IDiscountCalculator discountCalculator)
+        public Cart(ICartDiscountCalculator discountCalculator)
         {
             _discountCalculator = discountCalculator;
         }
@@ -20,11 +21,20 @@ namespace TDDCart.Models
             get => _items;
             set => TryAddItems(value);
         }
-        public decimal TotalCost => _discountCalculator.CalculateTotalCost();
+        public decimal TotalCost => _discountCalculator.CalculateDiscountedTotalPrice(_items);
 
         private void TryAddItems(IEnumerable<CartItem> items)
         {
 
+           items.ToList().ForEach(item =>
+           {
+               var itemFound = _items.FirstOrDefault(cartitem => cartitem.Name == item.Name);
+               if (itemFound == null)
+                   _items.Add(item);
+               else
+                   itemFound.Qty += 1;
+           });
+            var b = this._items;
         }
     }
 }
