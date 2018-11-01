@@ -146,9 +146,16 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="Company.Interfaces\IDiscountCalculator.cs" />
+    <Compile Include="Company.Repositories\Interfaces\ICartRepo.cs" />
+    <Compile Include="Company.Repositories\Interfaces\IItemRepo.cs" />
+    <Compile Include="Company.Services\CartService.cs" />
+    <Compile Include="Company.Services\Interfaces\ICartService.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\Cart.cs" />
+    <Compile Include="Models\CartItem.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -187,7 +194,6 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Controllers\" />
-    <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
