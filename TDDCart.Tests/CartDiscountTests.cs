@@ -58,13 +58,13 @@ namespace TDDCart.Tests
             Assert.AreEqual(3.45, cart.TotalCost);
         }
 
-        //[TestCase()]
-        //public void CartGetTotal_Given2Butter2Bread_ReturnThreeTen(int breadQty, int butterQty, int milkQty, decimal cartTotal)
-        //{
-        //    var cart = SetUpCart(breadQty, butterQty, milkQty);
+        [TestCase(1,2,8,9)]
+        public void CartGetTotal_Given1Bread2Butter8Milk_ReturnNine(int breadQty, int butterQty, int milkQty, decimal cartTotal)
+        {
+            var cart = SetUpCart(breadQty, butterQty, milkQty);
 
-        //    Assert.AreEqual(3.10, cart.TotalCost);
-        //}
+            Assert.AreEqual(9, cart.TotalCost);
+        }
 
         private static Cart SetUpCart(int breadQty, int butterQty, int milkQty)
         {
