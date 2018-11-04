@@ -50,6 +50,22 @@ namespace TDDCart.Tests
             Assert.AreEqual(3.10,cart.TotalCost);
         }
 
+        [TestCase(0,0,4,3.45)]
+        public void CartGetTotal_Given4milk_ReturnThreeFourtyFive(int breadQty, int butterQty, int milkQty, decimal cartTotal)
+        {
+            var cart = SetUpCart(breadQty, butterQty, milkQty);
+
+            Assert.AreEqual(3.45, cart.TotalCost);
+        }
+
+        //[TestCase()]
+        //public void CartGetTotal_Given2Butter2Bread_ReturnThreeTen(int breadQty, int butterQty, int milkQty, decimal cartTotal)
+        //{
+        //    var cart = SetUpCart(breadQty, butterQty, milkQty);
+
+        //    Assert.AreEqual(3.10, cart.TotalCost);
+        //}
+
         private static Cart SetUpCart(int breadQty, int butterQty, int milkQty)
         {
             var cartRepo = new Mock<ICartRepo>();
