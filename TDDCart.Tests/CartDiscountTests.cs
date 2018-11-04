@@ -42,6 +42,14 @@ namespace TDDCart.Tests
             Assert.AreEqual(cartTotal, cart.TotalCost);
         }
 
+        [TestCase(2, 2, 0, 3.10)]
+        public void CartGetTotal_Given2Butter2Bread_ReturnThreeTen(int breadQty, int butterQty, int milkQty, decimal cartTotal)
+        {
+            var cart = SetUpCart(breadQty, butterQty, milkQty);
+
+            Assert.AreEqual(3.10,cart.TotalCost);
+        }
+
         private static Cart SetUpCart(int breadQty, int butterQty, int milkQty)
         {
             var cartRepo = new Mock<ICartRepo>();
