@@ -4,7 +4,8 @@ Shopping Cart
 
 ## Getting Started
 
-Just Clone my repo 
+Just Clone my repo , you may need to delete the packages folder and restore.
+Then please update all the nuget packages.
 
 I have fully imlemented the server side TDD Discount Logic for the cart.
 Please Run the tests.
