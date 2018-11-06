@@ -32,16 +32,19 @@ creating carts etc.
 ```
 We are not looking at available stock in this project, so havent tested on that.
 ```
+## Things I need to add besides the UI
 
-## Important Notes on Things I would have done differently in a company project
+Web API
 
 Ideally the Repo for the shopping carts in this project needs to be a concurrent collection which is what i will implement next, atm we only have one cart.
+
+The item repo should also be a concurrent collection as stock may be updated by many threads otherwise the collection would have to be locked which wouldnt work after a certain amount of users.
+
+## Important Notes on Things I would have done differently in a company project
 
 The repo itself should be Generic, and it is advised async ORM methods are used so we can have an async end-to-end solution from repo to web api or mvc controller. 
 
 So the controller itself would most likely be async in a real project.
-
-The item repo should also be a concurrent collection as stock may be updated by many threads otherwise the collection would have to be locked which wouldnt work after a certain amount of users.
 
 ## Versioning
 
